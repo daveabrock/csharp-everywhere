@@ -8,6 +8,8 @@ If you have any comments, questions, or suggestions, feel free to submit a pull 
 This application uses the NASA [Astronomy Picture of the Day (APOD) API](https://api.nasa.gov/api.html#apod). To call this API, you need to get a key from NASA. If you plan to use 
 this extensively, please [apply for your own key](https://api.nasa.gov/index.html#apply-for-an-api-key).
 
+Much love to the inimitable David Pine ([@IEvangelist](https://github.com/IEvangelist)) for the demo inspiration.
+
 ## Getting started with Blazor ##
 This application targets Blazor 0.5.1. If you've never worked with Blazor, make sure you have the following prerequisites before moving forward.
 * [.NET Core 2.1 SDK](https://go.microsoft.com/fwlink/?linkid=873092), *2.1.300 or later*
