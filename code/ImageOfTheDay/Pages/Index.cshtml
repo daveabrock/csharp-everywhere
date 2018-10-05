@@ -1,0 +1,48 @@
+﻿@page "/"
+@inject HttpClient Http
+
+@if (_imageResult == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="container">
+        <h1>NASA Image of the Day</h1>
+
+        <h3>@_imageResult.Title</h3>
+        <br /><br />
+
+        <button type="button" class="btn btn-info"
+                onclick="@GetRandomImageAsync">
+            Random Image
+        </button>
+        <br /><br />
+
+        @_imageResult.Date.ToString("MMMM dd, yyyy")<br />
+        <img src="@_imageResult.Url" class="img-fluid" />
+        <br /><br />
+        <p>@_imageResult.Explanation</p>
+
+        <br /><br /><br />
+    </div>
+}
+
+@functions {
+    ApiResult _imageResult;
+    string _randomDateString;
+
+    protected override async Task OnInitAsync()
+    {
+        _imageResult = await Http.GetJsonAsync<ApiResult>
+            ("https://api.nasa.gov/planetary/apod?&api_key=bMfZNMaXbJVm7LJsxTTKcqDPB7omuuV7wy4e0j75");
+    }
+
+    private async Task GetRandomImageAsync()
+    {
+        DateUtility utility = new DateUtility();
+        _randomDateString = utility.GetRandomDateString();
+        _imageResult = await Http.GetJsonAsync<ApiResult>
+            ($"https://api.nasa.gov/planetary/apod?&date={_randomDateString}&api_key=bMfZNMaXbJVm7LJsxTTKcqDPB7omuuV7wy4e0j75");
+        }
+        }
