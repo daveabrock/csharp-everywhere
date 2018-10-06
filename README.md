@@ -11,9 +11,9 @@ this extensively, please [apply for your own key](https://api.nasa.gov/index.htm
 Much love to the inimitable David Pine ([@IEvangelist](https://github.com/IEvangelist)) for the demo inspiration.
 
 ## Getting started with Blazor ##
-This application targets Blazor 0.5.1. If you've never worked with Blazor, make sure you have the following prerequisites before moving forward.
-* [.NET Core 2.1 SDK](https://go.microsoft.com/fwlink/?linkid=873092), *2.1.300 or later*
-* [Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=873092), *15.7 or later with the ASP.NET and web development workload*
+This application targets Blazor 0.6.0. If you've never worked with Blazor, make sure you have the following prerequisites before moving forward.
+* [.NET Core 2.1 SDK](https://go.microsoft.com/fwlink/?linkid=873092), *2.1.402 or later*
+* [Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=873092), *15.8 or later with the ASP.NET and web development workload*
 * Install the [Blazor Language Services](https://marketplace.visualstudio.com/items?itemName=aspnet.blazor) extension from the Visual Studio Marketplace
 * Install the Blazor templates from the command line:
 
