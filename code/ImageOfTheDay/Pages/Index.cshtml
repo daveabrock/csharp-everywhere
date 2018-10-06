@@ -32,6 +32,8 @@ else
     ApiResult _imageResult;
     string _randomDateString;
 
+
+    // OnInitAsync is invoked when the component is ready
     protected override async Task OnInitAsync()
     {
         _imageResult = await Http.GetJsonAsync<ApiResult>
@@ -44,5 +46,5 @@ else
         _randomDateString = utility.GetRandomDateString();
         _imageResult = await Http.GetJsonAsync<ApiResult>
             ($"https://api.nasa.gov/planetary/apod?&date={_randomDateString}&api_key=bMfZNMaXbJVm7LJsxTTKcqDPB7omuuV7wy4e0j75");
-        }
+    }
         }
