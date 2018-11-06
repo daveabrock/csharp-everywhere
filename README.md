@@ -1,9 +1,9 @@
-    # C# Everywhere with Blazor #
+# C# Everywhere with Blazor #
 This repository includes slides and a sample application for Dave's *C# Everywhere with Blazor* conference talk.
 
 If you have any comments, questions, or suggestions, feel free to submit a pull request!
 
-# 'Image Of The Day' application
+## 'Image Of The Day' application ##
 
 This application uses the NASA [Astronomy Picture of the Day (APOD) API](https://api.nasa.gov/api.html#apod). To call this API, you need to get a key from NASA. If you plan to use 
 this extensively, please [apply for your own key](https://api.nasa.gov/index.html#apply-for-an-api-key).
