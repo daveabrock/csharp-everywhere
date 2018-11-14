@@ -1,5 +1,5 @@
 # C# Everywhere with Blazor #
-This repository includes slides and a sample application for Dave's *C# Everywhere with Blazor* conference talk.
+This repository includes slides and a sample application for my *C# Everywhere with Blazor* conference talk.
 
 If you have any comments, questions, or suggestions, feel free to submit a pull request!
 
