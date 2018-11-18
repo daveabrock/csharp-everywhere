@@ -12,8 +12,8 @@ Much love to the inimitable David Pine ([@IEvangelist](https://github.com/IEvang
 
 ## Getting started with Blazor ##
 This application targets Blazor 0.7.0. If you've never worked with Blazor, make sure you have the following prerequisites before moving forward.
-* [.NET Core 2.1 SDK](https://go.microsoft.com/fwlink/?linkid=873092), *2.1.402 or later*
-* [Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=873092), *15.8 or later with the ASP.NET and web development workload*
+* [.NET Core 2.1 SDK](https://go.microsoft.com/fwlink/?linkid=873092), *2.1.500 or later*
+* [Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=873092), *15.9 or later with the ASP.NET and web development workload*
 * Install the [Blazor Language Services](https://marketplace.visualstudio.com/items?itemName=aspnet.blazor) extension from the Visual Studio Marketplace
 * Install the Blazor templates from the command line:
 
