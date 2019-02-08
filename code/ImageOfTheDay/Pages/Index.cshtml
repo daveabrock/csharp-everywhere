@@ -28,23 +28,23 @@ else
     </div>
 }
 
+
 @functions {
-    ApiResult _imageResult;
-    string _randomDateString;
+ApiResult _imageResult;
+string _randomDateString;    // OnInitAsync is invoked when the component is ready
 
+protected override async Task OnInitAsync()
+{
+    _imageResult = await Http.GetJsonAsync<ApiResult>
+        ("https://api.nasa.gov/planetary/apod?&api_key=bMfZNMaXbJVm7LJsxTTKcqDPB7omuuV7wy4e0j75");
+}
 
-    // OnInitAsync is invoked when the component is ready
-    protected override async Task OnInitAsync()
-    {
-        _imageResult = await Http.GetJsonAsync<ApiResult>
-            ("https://api.nasa.gov/planetary/apod?&api_key=bMfZNMaXbJVm7LJsxTTKcqDPB7omuuV7wy4e0j75");
-    }
+private async Task GetRandomImageAsync()
+{
+    DateUtility utility = new DateUtility();
+    _randomDateString = utility.GetRandomDateString();
+    _imageResult = await Http.GetJsonAsync<ApiResult>
+        ($"https://api.nasa.gov/planetary/apod?&date={_randomDateString}&api_key=bMfZNMaXbJVm7LJsxTTKcqDPB7omuuV7wy4e0j75");
+}
+}
 
-    private async Task GetRandomImageAsync()
-    {
-        DateUtility utility = new DateUtility();
-        _randomDateString = utility.GetRandomDateString();
-        _imageResult = await Http.GetJsonAsync<ApiResult>
-            ($"https://api.nasa.gov/planetary/apod?&date={_randomDateString}&api_key=bMfZNMaXbJVm7LJsxTTKcqDPB7omuuV7wy4e0j75");
-    }
-        }
